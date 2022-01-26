@@ -10,8 +10,19 @@ import br.com.torezone.jogoforca.game.GameException;
 public class Dictionary {
 
 	private static final String FILE_NAME = "dicionario.txt";
-	
 	private List<String> words = new ArrayList<String>();
+	private static Dictionary instance;
+	
+	private Dictionary() {
+		load();
+	}
+	
+	public static Dictionary getInstance() {
+		if(instance == null) {
+			instance = new Dictionary();
+		}
+		return instance;
+	}
 
 	private void load() {
 
