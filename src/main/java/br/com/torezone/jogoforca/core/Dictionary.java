@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import br.com.torezone.jogoforca.core.utils.RandomUtils;
 import br.com.torezone.jogoforca.game.GameException;
+import br.com.torezone.jogoforca.utils.RandomUtils;
 
 public class Dictionary {
 
@@ -44,4 +44,5 @@ public class Dictionary {
 		return new Word(words.get(posicao));
 		
 	}
+	
 }
