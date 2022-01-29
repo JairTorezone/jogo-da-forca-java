@@ -15,8 +15,10 @@ public class Game {
 		UI.print("Bem vindo ao jogo da Forca!");
 
 		Dictionary dictionary = Dictionary.getInstance();
+		UI.print("Dicionário usado: " + dictionary.getName());
 		Word word = dictionary.nextWord();
 
+		UI.printNewLine();
 		UI.print("A palavra tem " + word.size() + " letras");
 		
 		Set<Character> usedChars = new HashSet<>();
